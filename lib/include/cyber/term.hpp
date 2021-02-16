@@ -1,6 +1,8 @@
 #pragma once
 
+#define NOMINMAX
 #include <termcolor/termcolor.hpp>
+#undef NOMINMAX
 
 #if defined(_WIN32) || defined(_WIN64)
 #   define TERMCOLOR_OS_WINDOWS
